@@ -9,4 +9,7 @@ function deleteEle() {
   data.length = data.length - 1;
   console.log(data);
 }
-    
+  
+
+
+
