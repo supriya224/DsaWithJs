@@ -14,3 +14,4 @@ if(data[i]===item){
 // with the help of splice we can =easily delete items
 data.splice(4,2);
 console.log(data)
+

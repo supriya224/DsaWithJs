@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array traversal</title>
+
+    <!-- traverse array in input -->
+    <!-- <script>
+
+        let data = [2, 45, 76, 12, 43, 0, 25, 87];
+        function getElement() {
+            let el = document.getElementById("element").value;   // ess line ka mtlub ye hua ki ek id defind kri
+            //  hai uske ander input me data chahiye to function ke andar id call call krke alert kr skte hai
+
+
+             alert(el) // ye to normal hm data pass kiye input me wha se data uthaya
+             document.write(el); // ye to normal hm data pass kiye input me wha se data uthaya
+            // ye dono yhi krenge
+
+
+            //  lekin hme array se data uthana hai to hm 
+            alert(data[el]) // esme hm array ka data or el dono pass krenge taki jo bhi elemnetn ya index de uske hisab se data aa jaye
+            //  yha pe index ki value dalni padegi tbhi index se data nikal ke dega
+        }
+    </script> -->
+
+    <!-- traverse array input end -->
+
+    <!-- for validation -->
+    <script>
+
+        let data = [2, 43, 5, 67, 12, 19, 0, 45];
+        function getElement() {
+            let el = document.getElementById('element').value;
+
+            if (el < data.length && typeof parseInt(el) ==="number" && !el<0) { // ye el jo hai wo inpute se uth k aayega jo bhi hm wha input de rhe honge uske hisab se chije krega
+                // parse int krega uske phle typeof check kro number hai ki nahi
+                alert(data[el])
+            } else {
+                alert("invalid input ")
+            }
+        }   
+    </script>
+    <!-- end validation -->
+</head>
+
+<body>
+
+
+    <input type="text" id="element" placeholder="enter the number">
+    <button onclick="getElement()"> Get element</button>
+
+</body>
+
+</html>
+
+
+
+<!-- 
+ // function getElement() {
+        //     // let el = document.getElementById('element').value
+        //     // alert(data[el]);
+        //     let el = document.getElementById('element').value;
+        //     if (el < data.length) {
+
+
+//         alert(data[el]);
+//     } else {
+//         alert(" please enter valid number")
+//     }
+// }
+
+//            this is code of accessing the element in array
+
+// let data =[2, 45, 76, 12, 43, 0, 25, 87];
+// let x=8;
+// document.write(data[x]);
+
+// this is the traversing the data
+// let data = [2, 45, 76, 12, 43, 0, 25, 87];
+// for (let i = 0; i < data.length; i++) {
+//     // console.log(data[i]);
+//     console.log(`array ${i} is ${data[i]}`); -->
+<!-- // } -->
