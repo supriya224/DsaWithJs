@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+        function searchEle() {
+            let data= [23, 12, 45, 17, 56, 34];
+            let item = document.getElementById('searchEl').value;
+            let index = undefined;
+            // console.log(data);
+            for (let i = 0; i <= data.length; i++) {
+                // if (data[i] == item) {
+                    if (data[i] === parseInt(item)) {
+                    index = i;
+                    break;
+                }
+            }
+        
+            console.log(index);
+           
+        }
+
+    </script>
+</head>
+
+<body>
+
+    <input type="text" placeholder="enter value" id="searchEl">
+    <button onclick="searchEle()">
+        serach
+    </button>
+</body>
+
+</html>

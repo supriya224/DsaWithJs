@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function deleteEle(){
+            let data=[2,34,12,45,56,0,5];
+            let position =document.getElementById('position').value;
+            position=parseInt(position)
+            for( i=position; i<data.length-1; i++){
+   
+                data[i] =data[i+1];
+
+            }
+            data.length=data.length-1
+            console.log(data);
+        }
+    </script>
+</head>
+<body>
+    <input type="number" placeholder="position" id="position" >
+    <!-- <input type="number" placeholder="enter the element" id="newEle"> -->
+    <button onclick="deleteEle()">Delete element</button>
+</body>
+</html>
