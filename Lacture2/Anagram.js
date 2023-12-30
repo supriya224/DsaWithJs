@@ -10,6 +10,14 @@ function isAnagram(string1, string2){
     console.log(counter[letter])
  }
  console.log(counter)
+ for(let items of string2){
+    if(!counter[items]){
+        return false
+    }
+    counter[items]-=1
+ }
+ return true
 }
 
-isAnagram('suuppriyaaaa','suuppriaayaa')
+const check=isAnagram('nehaaa','anaahe')
+console.log(check)
