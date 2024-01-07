@@ -1,3 +1,5 @@
+// palindrom is  that which is forwad and backward no is peresnt in given number
+
 const isPalindrom = function (x) {
   return x === +x.toString().split("").reverse().join("");
   //   toString() === convert in to string
