@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let data = [];
+      let currentElement = data.length;
+      let max = 5;
+
+      function push() {
+        let newVal = document.getElementById("newEle").value;
+
+        if (currentElement >= max) {
+          console.log("your can't add more than 5 elements", newVal);
+        } else {
+          data[currentElement] = newVal;
+          currentElement += 1;
+          document.getElementById("newEle").value = "";
+          console.log("element added");
+        }
+      }
+
+      //   push()
+
+      function pop() {
+        if (currentElement > 0) {
+          currentElement -= 1;
+          data.length = currentElement;
+        } else {
+          console.log("stack is empty");
+        }
+      }
+
+      function display() {
+        for (let i = 0; i < currentElement - 1; i++) {
+          console.log("stcak element no", i,"element data is ", data[i]);
+        }
+      }
+    //   console.log(data);
+    </script>
+    <input type="number" placeholder="enter number" id="newEle" />
+    <button onclick="push()">Push element</button>
+    <button onclick="pop()">Pop element</button>
+    <button onclick="display()">Display element</button>
+  </body>
+</html>

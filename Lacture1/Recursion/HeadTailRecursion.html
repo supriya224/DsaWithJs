@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Head tail rercusion</h1>
+    <script>
+        function recursion(x){
+    //    console.log(x) //head recursion start wiht 5-0
+       if(x>0){
+        recursion(x-1)
+       }
+       console.log(x) //tail recursion start with 0-5
+        }
+        let data=5
+        recursion(data);
+    //   function color() {
+    //     var data=20;
+    //     console.log(data);
+    //     if(true){
+    //         console.log(data*20)
+    //     }else{
+    //         console.log("error")
+    //     }
+    //   }
+    //   function days() {
+    //     color();
+    //   }
+    //   function fruits() {
+    //     days();
+    //   }
+    //   function toFunction() {
+    //     fruits();
+    //   }
+
+    //   toFunction();
+    </script>
+  </body>
+</html>
