@@ -1,6 +1,7 @@
 let queue=[]
 let currentSize=queue.length;
 let maxSize=5;
+
 function enQueue(newVal){
    if(currentSize>=maxSize){
     console.log("queue is full")
@@ -17,13 +18,13 @@ function deQueue(){
     // }
     // currentSize--;
     //  queue.length-currentSize
-    
+
     if(currentSize>0){
         console.log("queue is empty ")
-    }else{
+    }
         currentSize--;
         queue.length=currentSize
-    }
+    
   
 }
 function display(){
@@ -34,5 +35,5 @@ enQueue(140);
 enQueue(10);
 enQueue(70);
 
-// deQueue()
+deQueue()
 display()
