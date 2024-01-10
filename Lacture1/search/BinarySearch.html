@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let data = [2, 8, 12, 20, 26, 37, 50];
+      let find = 37;
+      let start = 0;
+      let end = data.length - 1;
+      let position = undefined;
+
+      while (start <= end) {
+        // let mid=Math.floor(data.length/2);
+        let mid = Math.floor((start + end) / 2);
+        // console.log(mid);
+        if (data[mid] === find) {
+          position = mid;
+          break;
+
+        } else if (data[mid] < find) {
+          start = mid + 1; // start krenege fir usek age jayeag jb tk value ni aa ajti
+        } else {
+          end = mid - 1;
+        }
+        // break;
+      }
+      console.log(data);
+      console.log(position);
+    </script>
+  </body>
+</html>

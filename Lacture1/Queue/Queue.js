@@ -24,9 +24,8 @@ function deQueue(){
     }
         currentSize--;
         queue.length=currentSize
-    
-  
 }
+
 function display(){
     console.log(queue);
 }
