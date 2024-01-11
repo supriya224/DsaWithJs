@@ -7,7 +7,8 @@ function selectionSort(data) {
     midId = i;
     // console.log(data[i]);
     for (j = i; j < data.length; j++) { // j ki value jb j=i (i ke equal hogi tb aage jayega means next element pe)
-      if (data[j] < data[midId]) { // data[j] ki value data[midId] se choti hogi tb 
+        if (data[j] > data[midId]) {
+        // if (data[j] > data[midId]) { // data[j] ki value data[midId] se choti hogi tb 
         midId = j; // midId= j return hoga
       }
     }
