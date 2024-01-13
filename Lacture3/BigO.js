@@ -1,10 +1,14 @@
-const funnyNumber =(array)=>{
- for(let i=0; i<array.length; i++){
-    if(i===3) return array[i]
- }
-}
+// const funnyNumber =(array)=>{
+//  for(let i=0; i<array.length; i++){
+//     if(i===0) return array[i]
+//  }
+// }
 
-const nums=[420, 96, 12, 70]
-console.log("funny number")
+const funnyNumber =(array)=>{
+   return array[3]
+  }
+  
+const nums=[420, 96, 12,69]
+console.time("funny number")
 console.log(funnyNumber(nums))
-console.log("funny number")
+console.timeEnd("funny number")
